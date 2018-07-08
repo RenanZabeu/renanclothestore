@@ -1,0 +1,230 @@
+/****************************BASE.HTML*************************/
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+html,body{
+    background: #22221f;
+    width: 100%;
+    height: 2000px;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+nav.navbar.navbar-inverse{
+    background-image: linear-gradient(#22221f, #22221f, #22221f)
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.index.container{
+    width: 90%;
+    margin-top: 20px;
+}
+
+/*Login and Log off*/
+
+#success{
+    margin-top: 50px;
+}
+
+/*********************************************************Index**********************************************/
+
+/*parallax*/
+.container-fluid.index{
+    padding-left: 0;
+     padding-right: 0;
+}
+
+#about-bg-diagonal{
+    width: 60%;
+    height: 900px;
+    float: right;
+    background-image: url(DSC_0457p2.jpg);
+    border-left: 400px solid #22221f;
+    border-top:900px solid transparent;
+    background-attachment: fixed;
+    background-position: 650px 50px;
+}
+
+.about-content-box {
+ float: left;
+ height: 800px;
+}
+
+.about-content-box-outer{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h3{
+    color: white;
+}
+.write{
+
+    color: white;
+}
+
+.login.container{
+    margin-top: 60px;
+}
+
+.register.container{
+    margin-top: 60px;
+}
+
+/********************************************Section 2*********************************************/
+
+.subSection{
+    height: 1000px;
+    width: 60%;
+    background-color: #22221f;
+
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.col-sm-4{
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.mainproduct{
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: white;
+}
+/*********************************************Animation**************************************************/
+.anime{
+    opacity: 0;
+    transform: translate3d(-100px,0,0);
+    transition: .3s;
+}
+
+.anime-start{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+/*********************************************Product**************************************************/
+
+.clothes{
+    margin-top: 10px;
+
+}
+
+.thumbnail{
+    background-color: #22221f;
+    height: 450px;
+    width: 400px;
+
+}
+.clothesalignment{
+    text-align: center;
+
+}
+
+
+.descriptionprod{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*******************************************************Footer************************************************************/
+.footer{
+    height: 200px;
+    background: #22221f;
+
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Add a hover effect if you want */
+                .fa:hover {
+                    opacity: 0.7;
+                    color: #ffffff;
+                }
+/*===================================Facebook================================================ */
+                  .fa-facebook {
+                      background: #3B5998;
+                      color: #ffffff;
+                      border-radius: 20px;
+
+                  }
+
+/*=================================Twitter=================================================== */
+                  .fa-twitter {
+                      background: #55ACEE;
+                      color: #ffffff;
+                      border-radius: 20px;
+                  }
+/*=================================Instagram=================================================== */
+                  .fa-instagram{
+                        background:linear-gradient( #400080, transparent),
+                          linear-gradient(200deg, #d047d1, #ff0000,    #ffff00);
+                          color: #ffffff;
+                          border-radius: 20px;
+                          font-size: 22px;
+
+                        }
+
+                        .fa-youtube{
+                          background: #cc181e;
+                          color: #ffffff;
+                          border-radius: 20px;
+                        }
+
+
+/***************************************************************************************************************/
+
+
+
+
+/*/Product Page/*/
+
+.thumbnail.product{
+    margin-top: 200px;
+    width: 500px;
+    height: 400px;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+}
+
+
+
+

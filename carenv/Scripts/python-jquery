@@ -1,0 +1,6 @@
+#!D:\FullStackDevelopment\Stream3Project\carapp\carenv\Scripts\python.exe
+
+from jsjquery import main
+
+if __name__ == "__main__":
+    main()

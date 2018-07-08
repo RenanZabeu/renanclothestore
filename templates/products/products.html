@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+        {% for product in products %}
+
+
+            <div class="row col-sm-4">
+
+            <div class="thumbnail clothes">
+              <img src="/media/{{ product.image }}">
+              <a class="clothesalignment productname ">{{ product.name }}</a>
+
+              <a class="clothesalignment descriptionprod">{{ product.description }}</a>
+
+              <a class="clothesalignment">${{ product.price }}</a>
+              <a class="clothesalignment">{{ product.paypal_form.sandbox }}</a>
+            </div>
+
+         </div>
+
+          {% endfor %}
+
+
+{% endblock %}

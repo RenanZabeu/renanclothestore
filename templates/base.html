@@ -1,0 +1,96 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Skull'n'Trident</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static "css/stylesheet.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% block head_js %}{% endblock %}
+</head>
+
+<body>
+
+<!------------------------------------------------------------------------------------------------------------->
+
+  <div class="masthead">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+       <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#carnavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><strong>Skull'n'Trident</strong></a>
+            </div>
+
+            <div class="navbar-collapse collapse" id="carnavbar">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/pages/about/">About</a></li>
+                            <li><a href="/pages/contact/">Contact</a></li>
+
+                        {% if user.is_authenticated %}
+                            <li><a href="/products/">Products</a></li>
+                            <li><a href="{% url 'profile' %}">Profile</a></li>
+                            <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+
+                        {% else %}
+                            <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </div>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<div id="success">
+{% if messages %}
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+    {% endif %}
+   <hr>
+</div>
+
+<article>
+   <div class="container-fluid index">
+       {% block content %}
+       {% endblock %}
+   </div>
+
+   <hr>
+
+<!----------------------------------------------Footer----------------------------------------------------------------->
+   <div class="footer" align="center">
+       <h2><a href="" target="_blank" class="fa fa-facebook"></a>
+			<a href="" target="_blank" class="fa fa-twitter"></a>
+			<a href="" target="_blank" class="fa fa-instagram"></a>
+			<a href="" target="_blank" class="fa fa-youtube"></a>
+		</h2>
+
+      		<p>Copyright</p>
+       <p>Made By a tired Developer </p>
+   </div>
+
+
+ </article>
+</body>
+
+<!-- script references -->
+<script type="text/javascript" src="{% static "js/script.js" %}"></script>
+</html>

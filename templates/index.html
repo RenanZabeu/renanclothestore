@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load staticfiles %}
+
+<div>
+    <section id="about">
+        <div id="about-bg-diagonal"></div>
+        <div class="">
+            <div class="">
+                <div class="col-md-4">
+                    <div class="about-content-box">
+                        <div class="about-content-box-outer">
+                            <div class="about-content-box-inner">
+                                <div class="content-title">
+                                    <h3> Clothes with style </h3>
+                                    <div class="content-title-underline"></div>
+                                </div>
+                                <div id="about-desc">
+                                <p class="write">
+                                    <strong>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                    </strong>
+                                </p>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<div class="col-bg-12">
+    <div class="subSection"></div>
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<section class="anime">
+    <div class="container-fluid">
+        <div class="row">
+            <h1><strong>for:</strong></h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+         <div class="row">
+            <div class="product">
+
+                <div class="man col-sm-4"  alt="man" style="background-color:orangered;">
+                        <p><strong>Men</strong></p>
+                        <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
+                            <img class="mainproduct"   src="{% static 'img/mentitle.jpg' %}"> </img>
+                        </a>
+                </div>
+
+                <div class="woman col-sm-4"  alt="woman" style="background-color:orangered;">
+                        <p><strong>Women</strong></p>
+                        <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
+                            <img class="mainproduct" src="{% static 'img/womentitle.jpg' %}"> </img>
+                        </a>
+                </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+    <hr>
+{% endblock %}
