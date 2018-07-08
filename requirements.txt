@@ -21,4 +21,4 @@ WebOb==1.8.2
 gunicorn== 19.9.0
 dj-database-url==0.2.1
 MySQL-python
-
+whitenoise==3.3.1
