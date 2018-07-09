@@ -15,7 +15,7 @@ STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_4ccy0JKl31lgweIUCX
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_W1BKv914iKkctKh7kiSH9LOg')
 
 # PayPal Settings
-SITE_URL = 'http://127.0.0.1:8000'
+SITE_URL = 'https://renanclothestore.herokuapp.com/'
 PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'renandias@yahoo.com.br'
 

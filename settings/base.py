@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rwl@k11m(xzyh+&^6=#k36hkev0)7s14n1mi7j6$!a9d7o$dh%'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["renanclothestore.herokuapp.com", "127.0.0.1", "localhost"]
 SITE_ID = 4
 
 
