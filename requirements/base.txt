@@ -19,6 +19,5 @@ stripe==1.82.1
 urllib3==1.23
 WebOb==1.8.2
 gunicorn== 19.9.0
-MySQL-python
 whitenoise==3.3.1
 git+https://github.com/RenanZabeu/renanclothesstore.git
