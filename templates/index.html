@@ -43,15 +43,22 @@
     <div class="subSection"></div>
 </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="fakebreakline">
+                <h1> FOR: </h1>
+            </div>
+
+        </div>
+    </div>
 <!--------------------------------------------------------------------------------------------------------------------->
 
 <section class="anime">
-
     <div class="container-fluid">
          <div class="row">
             <div class="product">
 
-                <div class="man col-sm-4"  alt="man" style="background-color:orangered;">
+                <div class="man col-sm-4"   alt="man" style="background-color:orangered;">
                         <p><strong>Men</strong></p>
                         <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
                             <img class="mainproduct"   src="{% static 'img/mentitle.jpg' %}"> </img>
