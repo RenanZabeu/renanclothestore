@@ -154,10 +154,18 @@ p{
     margin-top: 10px;
 }
 /**************************************************Flatpages*************************************************************/
+
 .flatpages{
     color: white;
+
 }
 
+.stylepages.col-sm-4{
+    background-color: darkmagenta;
+    height: auto;
+    width: auto;
+    padding-bottom: 30px;
+}
 
 /*************************************************Register*************************************************************/
 legend{
