@@ -3,21 +3,21 @@
 
         {% for product in products %}
 
+        <div class="col-sm-4">
+                <div class="row">
 
-            <div class="row col-sm-4">
+                <div class="thumbnail clothes">
+                  <img src="/media/{{ product.image }}">
+                  <a class="clothesalignment productname ">{{ product.name }}</a>
 
-            <div class="thumbnail clothes">
-              <img src="/media/{{ product.image }}">
-              <a class="clothesalignment productname ">{{ product.name }}</a>
+                  <a class="clothesalignment descriptionprod">{{ product.description }}</a>
 
-              <a class="clothesalignment descriptionprod">{{ product.description }}</a>
+                  <a class="clothesalignment">${{ product.price }}</a>
+                  <a class="clothesalignment">{{ product.paypal_form.sandbox }}</a>
+                </div>
 
-              <a class="clothesalignment">${{ product.price }}</a>
-              <a class="clothesalignment">{{ product.paypal_form.sandbox }}</a>
-            </div>
-
-         </div>
-
+             </div>
+        </div>
           {% endfor %}
 
 
