@@ -15,7 +15,7 @@ html,body{
 }
 
 nav.navbar.navbar-inverse{
-    background-image: linear-gradient(#141414, #141414, #141414)
+    background-image: linear-gradient(#141414, #141414, #141414);
 }
 
 article {
@@ -85,7 +85,7 @@ h3{
 .subSection{
     height: 900px;
     width: 60%;
-   background-color: #141414;
+    background-color: #141414;
 
 }
 
@@ -95,10 +95,12 @@ h1{
 
 }
 
+
 .col-sm-4{
     height: 600px;
     margin-top: 100px;
     margin-left: 200px;
+    margin-bottom: 80px;
 }
 
 .mainproduct{

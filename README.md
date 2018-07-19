@@ -15,18 +15,17 @@ The users have to be signed the monthly package that cost $1 dollar or they can 
 
     ### Some the tech used includes:
 - [Python](https://www.python.org/)
-    - [Flask] (flask.pocoo.org/)
-    I use **Flask** micro – framework  used to serve our data from the server to our web based interface
+    - [Django] (https://www.djangoproject.com/)
+    I used **Django** – framework  used to serve our data from the server to our web based interface
 - [Bootstrap](http://getbootstrap.com/)
-    - We use **Bootstrap** to give our project a simple, responsive layout
-- [MongoDB](https://www.mongodb.com)
-    - We use **MongoDB** NoSQL Database used to convert and present our data in JSON format
-- [D3.js](https://d3js.org/)
-    - **D3.js** A JavaScript based visualization engine, which will render interactive charts and graphs based on the data
-- [Dc.js](https://dc-js.github.io/dc.js)
-    - **D3.js** A JavaScript based wrapper library for D3.js, which makes plotting the charts a lot easier
-- [Crossfilter.js](https://dc-js.github.io/dc.js)
-    - **Crossfilter.js** A JavaScript based data manipulation library that enables two way data binding.
+    - I use **Bootstrap** to give our project a simple, responsive layout
+- [DB.sqlite3](https://sqlitebrowser.org/)
+    - I use **DB.sqlite3** DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
+- [Stripe](https://stripe.com/ie)
+    - **Stripe** used for the website to take subscription payments.
+- [Paypal](https://developer.paypal.com/)
+    - **Paypal** I used for the users buy at anytime the products using this single payment system.
+
    
     ## Contributing
 

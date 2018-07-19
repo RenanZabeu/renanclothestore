@@ -46,7 +46,7 @@
     <div class="container">
         <div class="row">
             <div class="fakebreakline">
-                <h1> FOR: </h1>
+                <h1>  </h1>
             </div>
 
         </div>
@@ -57,14 +57,14 @@
          <div class="row">
             <div class="product">
 
-                <div class="man col-sm-4 col-xs-6 col-md-4"   alt="man" style="background: linear-gradient(to bottom right, darkmagenta, mediumpurple);">
+                <div class="man col-sm-4 col-xs-6 col-md-4 col-lg-4"   alt="man" style="background: linear-gradient(to bottom right, darkmagenta, mediumpurple);">
                         <p><strong>Men</strong></p>
                         <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
                             <img class="mainproduct"   src="{% static 'img/mentitle.jpg' %}"> </img>
                         </a>
                 </div>
 
-                <div class="woman col-sm-4 col-xs-6 col-md-4"  alt="woman" style="background: linear-gradient(to bottom right, mediumpurple, darkmagenta);">
+                <div class="woman col-sm-4 col-xs-6 col-md-4 col-lg-4"  alt="woman" style="background: linear-gradient(to bottom right, mediumpurple, darkmagenta);">
                         <p><strong>Women</strong></p>
                         <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
                             <img class="mainproduct" src="{% static 'img/womentitle.jpg' %}"> </img>
