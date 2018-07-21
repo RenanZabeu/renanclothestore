@@ -26,7 +26,7 @@ article {
 }
 
 .index.container{
-    width: 90%;
+
     margin-top: 20px;
 }
 
@@ -39,10 +39,7 @@ article {
 /*********************************************************Index**********************************************/
 
 /*parallax*/
-.container-fluid.index{
-    padding-left: 0;
-     padding-right: 0;
-}
+
 
 #about-bg-diagonal{
     width: 60%;
@@ -52,7 +49,8 @@ article {
     border-left: 400px solid #141414;
     border-top:900px solid transparent;
     background-attachment: fixed;
-    background-position: 550px 50px;
+    background-position: 350px 50px;
+
 }
 
 .about-content-box {
@@ -97,10 +95,9 @@ h1{
 
 
 .col-sm-4{
-    height: 600px;
-    margin-top: 100px;
-    margin-left: 200px;
-    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-left: 160px;
+    margin-bottom: 50px;
 }
 
 .mainproduct{
@@ -190,19 +187,21 @@ img{
 
 /**************************************************Flatpages*************************************************************/
 
-.container.flatpages{
-    margin-right: 200px;
-}
+
 .flatpages{
     color: white;
 
+
 }
 
-.stylepages.col-sm-4{
+.stylepages{
     background: linear-gradient(to bottom right, mediumpurple, darkmagenta);
     height: auto;
     width: auto;
+    padding-top: 2px;
     padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*************************************************Register*************************************************************/
