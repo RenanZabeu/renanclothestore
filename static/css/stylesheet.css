@@ -52,7 +52,7 @@ article {
     border-left: 400px solid #141414;
     border-top:900px solid transparent;
     background-attachment: fixed;
-    background-position: 650px 50px;
+    background-position: 550px 50px;
 }
 
 .about-content-box {
@@ -83,7 +83,7 @@ h3{
 /********************************************Section 2*****************************************************************/
 
 .subSection{
-    height: 900px;
+    height: 50px;
     width: 60%;
     background-color: #141414;
 
