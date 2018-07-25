@@ -2,7 +2,7 @@
 
 ## Overview
 
-
+This Store is run with Django framework and python. 
 
 ### What does it do?
 

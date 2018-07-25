@@ -1,4 +1,20 @@
 /****************************BASE.HTML*************************/
+ @media (max-width: 767px) {
+     #about-bg-diagonal {
+         display: none;
+     }
+    div.subSection{
+        display: none;
+    }
+
+    .front.col-sm-4{
+    margin-top: 0;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    }
+
+ }
+
 
 .selector-for-some-widget {
   box-sizing: content-box;
@@ -54,9 +70,7 @@ article {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-
-
+     background-size: cover;
 }
 
 .about-content-box {
@@ -285,10 +299,3 @@ legend{
 
 
 /***************************************************************************************************************/
-
-
-
-
-
-
-
