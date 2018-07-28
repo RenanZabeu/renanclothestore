@@ -1,5 +1,12 @@
 /****************************BASE.HTML*************************/
- @media (max-width: 767px) {
+@media (max-width: 480px) {
+   svg.skull{
+    display: none;
+}
+
+}
+
+@media (max-width: 767px) {
      #about-bg-diagonal {
          display: none;
      }
@@ -8,14 +15,35 @@
     }
 
     .front.col-sm-4{
-    margin-top: 0;
-    margin-left: 70px;
-    margin-bottom: 50px;
+        margin-top: 0;
+        margin-left: 70px;
+        margin-bottom: 50px;
     }
 
- }
+   .products.col-sm-4{
+        margin-top: 0;
+        margin-left: 5px;
+        margin-bottom: 20px;
+   }
 
+   svg.skull{
+    display: none;
+}
+ .products.col-sm-4{
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 20px;
+   }
+}
 
+@media (min-width: 768px) and (max-width: 991px){
+    .products.col-sm-4{
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 20px;
+   }
+}
+/*===================================================PC===============================================================*/
 .selector-for-some-widget {
   box-sizing: content-box;
 }
@@ -42,7 +70,6 @@ article {
 }
 
 .index.container{
-
     margin-top: 20px;
 }
 
@@ -52,7 +79,7 @@ article {
     margin-top: 50px;
 }
 
-/*********************************************************Index**********************************************/
+/*===============================================Index================================================================*/
 
 /*parallax*/
 
@@ -61,7 +88,7 @@ article {
     width: 60%;
     height: 900px;
     float: right;
-    background-image: url(DSC_0457p2.jpg);
+    background-image: url("../img/DSC_0457p2.jpg");
     border-left: 400px solid #141414;
     border-top:900px solid transparent;
     background-attachment: fixed;
@@ -98,7 +125,7 @@ h3{
 }
 
 
-/********************************************Section 2*****************************************************************/
+/*===========================================Section 2================================================================*/
 
 .subSection{
     height: 50px;
@@ -114,7 +141,7 @@ h1{
 }
 
 
-.col-sm-4{
+.front{
     margin-top: 60px;
     margin-left: 160px;
     margin-bottom: 50px;
@@ -129,7 +156,7 @@ p{
     color: white;
     font-size: 20px;
 }
-/*********************************************Animation****************************************************************/
+/*============================================Animation===============================================================*/
 
 .anime{
     opacity: 0;
@@ -143,7 +170,7 @@ p{
 }
 
 
-/*************************************************Login****************************************************************/
+/*================================================Login===============================================================*/
 .login.container{
     margin-top: 60px;
     background: linear-gradient(to bottom right, darkmagenta, mediumpurple);
@@ -156,7 +183,7 @@ p{
     padding-top: 5px;
 }
 
-/*********************************************Profile******************************************************************/
+/*===============================================Profile==============================================================*/
 .profile.container{
     margin-top: 60px;
     background: linear-gradient(to bottom right, darkmagenta, mediumpurple);
@@ -168,7 +195,13 @@ p{
     color: gold;
 
 }
-/*********************************************Product******************************************************************/
+/*==============================================Product===============================================================*/
+
+.products{
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+   }
 
 .clothes{
     margin-top: 10px;
@@ -177,10 +210,10 @@ p{
 
 .thumbnail{
     background-color: #141414;
-    height: 450px;
+    height: 500px;
     width: 400px;
-
 }
+
 .clothesalignment{
     text-align: center;
 
@@ -193,20 +226,35 @@ p{
     margin-top: 10px;
 }
 
-
-.thumbnail.product{
-    margin-top: 200px;
-    width: 500px;
-    height: 400px;
+.clothesalignment{
+    color: white;
 }
+
 
 img{
     width: 300px;
     height: 200px;
 }
 
+#skullshape{
 
-/**************************************************Flatpages*************************************************************/
+
+}
+
+.skullshape{
+    align-content: center;
+    transition: all 1.5s;
+}
+svg:hover .skullshape{
+    fill: yellowgreen;
+    transform: scale(.9);
+}
+
+svg.skull{
+    margin-left: 310px;
+}
+
+/*===============================================Flatpages============================================================*/
 
 
 .flatpages{
@@ -225,7 +273,7 @@ img{
     padding-right: 10px;
 }
 
-/*************************************************Register*************************************************************/
+/*================================================Register============================================================*/
 .monthly{
     background: linear-gradient(to bottom right, mediumpurple, darkmagenta);
 }
@@ -242,7 +290,8 @@ legend{
 .register{
     color: white;
 }
-/*******************************************************Footer*********************************************************/
+
+/*==================================================Footer============================================================*/
 .footer{
     height: 200px;
     background: #141414;
@@ -260,14 +309,12 @@ legend{
     font-size: 15px;
 }
 
-
-
-/* Add a hover effect if you want */
+/*=========================================hover======================================================================*/
                 .fa:hover {
                     opacity: 0.7;
                     color: #ffffff;
                 }
-/*===================================Facebook================================================ */
+/*==============================================Facebook============================================================= */
                   .fa-facebook {
                       background: #3B5998;
                       color: #ffffff;
@@ -275,13 +322,13 @@ legend{
 
                   }
 
-/*=================================Twitter=================================================== */
+/*================================================Twitter============================================================ */
                   .fa-twitter {
                       background: #55ACEE;
                       color: #ffffff;
                       border-radius: 20px;
                   }
-/*=================================Instagram=================================================== */
+/*==============================================Instagram============================================================ */
                   .fa-instagram{
                         background:linear-gradient( #400080, transparent),
                           linear-gradient(200deg, #d047d1, #ff0000,    #ffff00);
@@ -298,4 +345,3 @@ legend{
                         }
 
 
-/***************************************************************************************************************/
