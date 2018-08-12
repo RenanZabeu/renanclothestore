@@ -1,13 +1,14 @@
 /****************************BASE.HTML*************************/
 @media (max-width: 480px) {
 
+
     svg.skull{
     display: none;
 }
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     #about-bg-diagonal {
          display: none;
@@ -30,20 +31,30 @@
 
    svg.skull{
     display: none;
-}
- .products.col-sm-4{
-        margin-top: 0;
-        margin-left: 50px;
-        margin-bottom: 20px;
    }
+
+
+
 }
 
+
 @media (min-width: 768px) and (max-width: 991px){
-    .products.col-sm-4{
-        margin-top: 0;
-        margin-left: 50px;
-        margin-bottom: 20px;
-   }
+
+.col-sm-4{
+    width: 40%;
+    margin-left: 50px;
+}
+    svg.skull{
+    display: none;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    svg.skull {
+        display: none;
+    }
 }
 /*===================================================PC===============================================================*/
 .selector-for-some-widget {
@@ -73,8 +84,8 @@ article {
     grid-template-columns: 100%;
 }
 
-.index.container{
-    margin-top: 20px;
+.container{
+ margin-top: -10px;
 }
 
 /*Login and Log off*/
@@ -85,102 +96,45 @@ article {
 
 /*===============================================Index================================================================*/
 
-/*parallax*/
-
-
-#about-bg-diagonal{
-    width: 60%;
-    height: 900px;
-    float: right;
-    background-image: url("../img/DSC_0457p2.jpg");
-    border-left: 400px solid #141414;
-    border-top:900px solid transparent;
-    background-attachment: fixed;
-    background-position: -280px -50px;
+.landing{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/landingimg.jpg");
     background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size: cover;
-}
-
-.about-content-box {
- float: left;
- height: 800px;
-}
-
-.about-content-box-outer{
-    width: 100%;
-    height: 100%;
-    display: table;
-}
-
-.about-content-box-inner{
-    display: table-cell;
-    vertical-align: middle;
-}
-
-h3{
-    color: white;
-}
-.write{
-
-    color: white;
-}
-
-
-/*===========================================Section 2================================================================*/
-
-.subSection{
-    height: 50px;
-    width: 60%;
-    background-color: #141414;
+    background-size: 100% 100%;
 
 }
 
-h1{
+.contentbox{
+    height: 250px;
+    background-color: rgba(0,0,0,.55);
     text-align: center;
-    color:#141414;
-
+    margin-top: 400px;
+    padding:10px;
 }
 
-
-.front{
-    margin-top: 60px;
-    margin-left: 160px;
-    margin-bottom: 50px;
-    border-radius: 2px;
+.btn.btn-info{
+    height: 50px;
+    width: 120px;
+    margin-top: 5px;
 }
 
-.mainproduct{
-    height: 100%;
-    width: 100%;
+.man{
+    margin-left: 30px;
+    padding: 15px;
+}
+.women{
+ padding: 15px;
 }
 
-.mainproduct:hover{
-    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
-
-p{
+.landingwrite{
+    margin-top: 20px;
     color: white;
-    font-size: 20px;
-}
-/*============================================Animation===============================================================*/
-
-.anime{
-    opacity: 0;
-    transform: translate3d(-100px,0,0);
-    transition: .3s;
 }
 
-.anime-start{
-    opacity: 1;
-    transform: translate3d(0,0,0);
+.breakline{
+    width: 270px;
 }
-
-
 /*================================================Login===============================================================*/
 .login.container{
     margin-top: 60px;
@@ -207,15 +161,13 @@ p{
 
 .success{
     color: gold;
+}
 
+.colorp{
+    color: white;
 }
 /*==============================================Product===============================================================*/
 
-.products{
-        margin-top: 0;
-        margin-left: 0;
-        margin-bottom: 20px;
-   }
 
 .clothes{
     margin-top: 10px;
@@ -224,15 +176,15 @@ p{
 
 .thumbnail{
     background-color: #141414;
-    height: 500px;
-    width: 400px;
+    height: 470px;
+    width: 280px;
+
 }
 
 .clothesalignment{
     text-align: center;
 
 }
-
 
 .descriptionprod{
     text-align: center;
@@ -245,13 +197,8 @@ p{
 }
 
 
-img{
-    width: 300px;
-    height: 200px;
-}
 
-
-
+/*skull effect*/
 
 #skullshape{
 
@@ -269,7 +216,7 @@ svg:hover .skullshape{
 }
 
 svg.skull{
-    margin-left: 310px;
+    margin-left: 700px;
 }
 
 /*===============================================Flatpages============================================================*/
@@ -277,7 +224,6 @@ svg.skull{
 
 .flatpages{
     color: white;
-
 
 }
 

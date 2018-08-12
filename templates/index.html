@@ -2,76 +2,23 @@
 {% block content %}
 {% load staticfiles %}
 
-<div>
-    <section id="about">
-        <div id="about-bg-diagonal"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="about-content-box">
-                        <div class="about-content-box-outer">
-                            <div class="about-content-box-inner">
-                                <div class="content-title">
-                                    <h3> Clothes with style </h3>
-                                    <div class="content-title-underline"></div>
-                                </div>
-                                <div id="about-desc">
-                                <p class="write">
-                                    <strong>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                    </strong>
-                                </p>
-                            </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+<div class="landing">
+<div class="container">
+
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="contentbox">
+                <h3 class="landingwrite"><strong>What are you waiting for?</strong></h3>
+                <h3 class="landingwrite"><strong>Let's go!</strong></h3>
+            <hr class="breakline">
+            <a{% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %} class="btn btn-info women" role="button"><strong>Womenswear</strong></a>
+            <a{% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %} class="btn btn-info man" role="button"><strong>Menswear</strong></a>
             </div>
-
         </div>
 
-    </section>
-</div>
-
-<!--------------------------------------------------------------------------------------------------------------------->
-<div>
-    <div class="subSection"></div>
-</div>
-
-            <div class="fakebreakline">
-                <h1>  </h1>
-            </div>
-
-<!--------------------------------------------------------------------------------------------------------------------->
-<section class="anime">
-    <div class="container-fluid">
-         <div class="row ">
-            <div class="product">
-                <div class="front col-sm-4 col-xs-6 col-md-4 col-lg-4"   alt="man" style="background: linear-gradient(to bottom right, darkmagenta, mediumpurple);">
-                        <p><strong>Men</strong></p>
-                        <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
-                            <img class="mainproduct"   src="{% static 'img/mentitle.jpg' %}">
-                                <p></p>
-                            </img>
-                        </a>
-                </div>
-                <div class="front col-sm-4 col-xs-6 col-md-4 col-lg-4"  alt="woman" style="background: linear-gradient(to bottom right, mediumpurple, darkmagenta);">
-                        <p><strong>Women</strong></p>
-                        <a {% if user.is_authenticated %} href="/products/" {% else %} href="{% url 'login' %}" {% endif %}>
-                            <img class="mainproduct" src="{% static 'img/womentitle.jpg' %}">
-                                <p></p>
-                            </img>
-                        </a>
-                </div>
-            </div>
-          </div>
-        </div>
     </div>
- <hr>
-</section>
+</div>
+
+
 {% endblock %}

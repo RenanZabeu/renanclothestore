@@ -1,11 +1,51 @@
 {% extends 'base.html' %}
 {% block content %}
     <div class="container flatpages">
-        <div class="">
-            <div class="stylepages">
-           <h2 class="flatpages">{{ flatpage.title }}</h2>
+        <div class="stylepages">
+             <h2 class="flatpages">{{ flatpage.title }}</h2>
            {{ flatpage.content }}
-            </div>
+    <hr>
+        <div id="contact">
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><span class="glyphicon glyphicon-map-marker"></span> Dublin, IE</p>
+			<p><span class="glyphicon glyphicon-phone"></span> Phone: +353 870534391</p>
+			<p><span class="glyphicon glyphicon-envelope"></span> Email: renanzabeu@yahoo.it</p>
+            <p><span class="glyphicon glyphicon-eye-open"></span> The Lost Eye of Thundera</p>
+			<p><span class="glyphicon glyphicon-thumbs-up"></span> Liked our page?</p>
+            <p><span class="glyphicon glyphicon-thumbs-down"></span> Didn't Like it?</p>
+    	</div>
+			<form>
+				<div class="col-sm-6 form-group ">
+					<input class="form-control" id="name" name="name" data-ng-model="contactData.name" placeholder="Name" type="text" required/>
+				</div>
+
+				<div class="col-sm-6 form-group">
+				 <input class="form-control" id="email" name="email" data-ng-model="contactData.email" placeholder="Email" type="email" required>
+				</div>
+
+				<div class="col-sm-6 form-group">
+				 <input class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" data-ng-model="phone" placeholder="Phone Number" type="Text"/>
+				</div>
+
+				 <div class="col-sm-6 form-group">
+				   <input class="form-control bfh-phone" data-format="+1 (ddd) ddd-dddd" data-ng-model="mobile" placeholder="Mobile Number" type="Text" required/>
+				 </div>
+			</form>
+
+		</div>
+   			<textarea data-ng-model="contactData.message" class="form-control" id="enquiry" name="enquiry" placeholder="Rock on!" rows="5"></textarea>
+
+	     <div class="row">
+	  		<div class="col-md-12 form-group">
+	 			<button class="btn btn-success pull-right">Send</button>
+	        </div>
+	      </div>
+         </div>
         </div>
+       </div>
+
     </div>
+</div>
 {% endblock %}

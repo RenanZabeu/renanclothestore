@@ -1,26 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <div class="container">
         {% for product in products %}
 
-        <div class="products col-sm-4">
-                <div class="row">
+        <div class="col-lg-4 col-sm-4">
 
                 <div class="thumbnail clothes">
                   <img src="/media/{{ product.image }}">
-                  <div class="clothesalignment productname">{{ product.name }}</div>
-
+                    <div class="clothesalignment productname"><strong>{{ product.name }}</strong></div>
                   <div class="clothesalignment descriptionprod">{{ product.description }}</div>
-
                   <div class="clothesalignment">${{ product.price }}</div>
                   <div class="clothesalignment">{{ product.paypal_form.sandbox }}</div>
                 </div>
 
-             </div>
         </div>
+
           {% endfor %}
-<div  class="container" id="skullshape" >
-<div class="col-sm-4">
+    </div>
+<div  id="skullshape" >
+
 <svg class="skull" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="500px" height="200px" viewBox="0 0 835.000000 1280.000000"
  preserveAspectRatio="xMidYMid meet">
