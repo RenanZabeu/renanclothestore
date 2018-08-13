@@ -35,18 +35,18 @@
             <div class="navbar-collapse collapse" id="carnavbar">
                 <ul class="nav navbar-nav navbar-right">
 
-                            <li><a href="/">Home</a></li>
+                            <li><a href="/"><strong>Home</strong></a></li>
                          <!--   <li><a href="/pages/about/">About</a></li> -->
-                            <li><a href="/pages/contact/">Contact</a></li>
+                            <li><a href="/pages/contact/"><strong>Contact</strong></a></li>
 
                         {% if user.is_authenticated %}
-                            <li><a href="/products/">Products</a></li>
-                            <li><a href="{% url 'profile' %}">Profile</a></li>
-                            <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+                            <li><a href="/products/"><strong>Products</strong></a></li>
+                            <li><a href="{% url 'profile' %}"><strong>Profile</strong></a></li>
+                            <li><a href="{% url 'logout' %}"><strong><span class="glyphicon glyphicon-log-out"></span></strong> Log Out</a></li>
 
                         {% else %}
-                            <li><a href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="{% url 'register' %}"><strong><span class="glyphicon glyphicon-user"></span></strong> Sign Up</a></li>
+                            <li><a href="{% url 'login' %}"><strong><span class="glyphicon glyphicon-log-in"></span></strong> Login</a></li>
                         {% endif %}
                 </ul>
             </div>
