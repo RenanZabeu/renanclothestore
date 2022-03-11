@@ -9,7 +9,7 @@ django-paypal==0.3.6
 fanstatic==1.0.0
 idna==2.7
 js.lodash==4.17.4
-Pillow==5.1.0
+Pillow==9.0.1
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.19.1
